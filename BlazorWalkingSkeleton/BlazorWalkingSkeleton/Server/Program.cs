@@ -1,6 +1,7 @@
 global using BlazorWalkingSkeleton.Shared;
 global using Microsoft.EntityFrameworkCore;
 global using BlazorWalkingSkeleton.Server.Data;
+global using BlazorWalkingSkeleton.Server.Services.SuperHeroService;
 using Microsoft.AspNetCore.ResponseCompression;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +14,7 @@ builder.Services.AddDbContext<DataContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+builder.Services.AddScoped<ISuperHeroService, SuperHeroService>();
 
 var app = builder.Build();
 
