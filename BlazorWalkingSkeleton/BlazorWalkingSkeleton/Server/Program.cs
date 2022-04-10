@@ -16,7 +16,11 @@ builder.Services.AddDbContext<DataContext>(options =>
 });
 builder.Services.AddScoped<ISuperHeroService, SuperHeroService>();
 
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
 var app = builder.Build();
+app.UseSwaggerUI();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -30,6 +34,7 @@ else
     app.UseHsts();
 }
 
+app.UseSwagger();
 app.UseHttpsRedirection();
 
 app.UseBlazorFrameworkFiles();

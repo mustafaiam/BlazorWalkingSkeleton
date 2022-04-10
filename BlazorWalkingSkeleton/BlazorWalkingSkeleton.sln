@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWalkingSkeleton.Server", "BlazorWalkingSkeleton\Server\BlazorWalkingSkeleton.Server.csproj", "{C973FE9E-A7D0-475B-9F32-D1335BE00D09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWalkingSkeleton.Server", "BlazorWalkingSkeleton\Server\BlazorWalkingSkeleton.Server.csproj", "{C973FE9E-A7D0-475B-9F32-D1335BE00D09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWalkingSkeleton.Client", "BlazorWalkingSkeleton\Client\BlazorWalkingSkeleton.Client.csproj", "{EC67BDC2-514E-40BF-AEFE-80933324CB74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWalkingSkeleton.Client", "BlazorWalkingSkeleton\Client\BlazorWalkingSkeleton.Client.csproj", "{EC67BDC2-514E-40BF-AEFE-80933324CB74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWalkingSkeleton.Shared", "BlazorWalkingSkeleton\Shared\BlazorWalkingSkeleton.Shared.csproj", "{CF15F15B-A2B1-4E25-B206-71EDF16D3B7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWalkingSkeleton.Shared", "BlazorWalkingSkeleton\Shared\BlazorWalkingSkeleton.Shared.csproj", "{CF15F15B-A2B1-4E25-B206-71EDF16D3B7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

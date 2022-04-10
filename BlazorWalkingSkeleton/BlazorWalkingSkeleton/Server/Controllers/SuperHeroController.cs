@@ -15,5 +15,11 @@ namespace BlazorWalkingSkeleton.Server.Controllers
             _superHeroService = superHeroService;
             _context = context;
         }
+
+        [HttpGet]
+        public async Task<ActionResult<List<SuperHero>>> GetAll()
+        {
+            return Ok(await _superHeroService.GetAll());
+        }
     }
 }
